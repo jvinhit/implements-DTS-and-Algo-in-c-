@@ -52,5 +52,23 @@ namespace StackImp
                 top = top.Next;
             }
         }
+
+        public void doicoso(int socandoi,int coso)
+        {
+            // thuat toan don gian
+            int sodu;
+            while(socandoi != 0)
+            {
+                sodu = socandoi % coso;
+                push(sodu);
+                socandoi = socandoi / coso;
+            }
+            Console.WriteLine("Ket qua la: ");
+            while (!isEmpty())
+            {
+                Console.Write(pop());
+            }
+                        
+        }
     }
 }
